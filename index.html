@@ -2,22 +2,35 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LvHY 的个人主页</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-<img src="avatar.jpg" alt="我的头像" class="avatar">
-    <h1>你好，我是 LvHY</h1>
-    <p class="subtitle">这是我用 GitHub Pages 发布的第一个个人主页。</p>
 
-    <div>
-      <span class="badge">GitHub 新手</span>
-      <span class="badge">正在学习网页</span>
-      <span class="badge">GitHub Pages</span>
-    </div>
+    <header class="hero">
+      <img src="avatar.jpg" alt="我的头像" class="avatar">
 
-    <div class="card">
+      <h1>你好，我是 LvHY</h1>
+      <p class="subtitle">这是我用 GitHub Pages 发布的第一个个人主页。</p>
+
+      <div class="badges">
+        <span class="badge">GitHub 新手</span>
+        <span class="badge">正在学习网页</span>
+        <span class="badge">GitHub Pages</span>
+        <span class="badge">HTML / CSS</span>
+      </div>
+
+      <nav class="nav">
+        <a href="https://github.com/qq192112324-gif" target="_blank">我的 GitHub</a>
+        <a href="#projects">我的项目</a>
+        <a href="#study">学习记录</a>
+        <a href="#contact">联系我</a>
+      </nav>
+    </header>
+
+    <section class="card" id="study">
       <h2>我的学习进度</h2>
       <ul>
         <li>已学会创建 GitHub 仓库</li>
@@ -26,12 +39,50 @@
         <li>已成功发布 GitHub Pages 网站</li>
         <li>正在学习 HTML 和 CSS 美化网页</li>
       </ul>
-    </div>
+    </section>
 
-    <div class="card">
+    <section class="card" id="projects">
+      <h2>我的项目</h2>
+
+      <div class="project-list">
+        <div class="project-item">
+          <h3>GitHub Pages 个人主页</h3>
+          <p>这是我使用 HTML、CSS 和 GitHub Pages 搭建的第一个网页项目。</p>
+        </div>
+
+        <div class="project-item">
+          <h3>GitHub 学习记录</h3>
+          <p>记录我从创建仓库、提交推送，到发布网站的完整学习过程。</p>
+        </div>
+
+        <div class="project-item">
+          <h3>网页样式练习</h3>
+          <p>通过 CSS 学习布局、颜色、圆角、阴影、按钮和响应式适配。</p>
+        </div>
+
+        <div class="project-item">
+          <h3>个人作品展示</h3>
+          <p>后续可以把自己的项目、图片、文章和学习成果放在这里展示。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
       <h2>我的目标</h2>
-      <p>接下来我想继续学习网页制作、GitHub 项目管理，以及如何把自己的作品展示出来。</p>
-    </div>
+      <p>
+        接下来我想继续学习网页制作、GitHub 项目管理，以及如何把自己的作品展示出来。
+        未来我会继续完善这个主页，让它变成真正的个人作品展示网站。
+      </p>
+    </section>
+
+    <section class="card" id="contact">
+      <h2>联系我</h2>
+      <p>你可以通过 GitHub 了解我的项目和学习进度。</p>
+      <a class="contact-button" href="https://github.com/qq192112324-gif" target="_blank">
+        访问我的 GitHub
+      </a>
+    </section>
+
   </div>
 </body>
 </html>
