@@ -59,3 +59,53 @@ ul {
   display: block;
   margin-bottom: 20px;
 }
+.nav {
+  margin: 25px 0;
+}
+.nav a {
+  display: inline-block;
+  text-decoration: none;
+  background: #2563eb;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.nav a:hover {
+  background: #1d4ed8;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.project-item {
+  background: white;
+  border: 1px solid #e5e7eb;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.project-item h3 {
+  margin-top: 0;
+  color: #2563eb;
+}
+
+@media (max-width: 700px) {
+  .container {
+    margin: 20px;
+    padding: 25px;
+  }
+
+  .project-list {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+}
